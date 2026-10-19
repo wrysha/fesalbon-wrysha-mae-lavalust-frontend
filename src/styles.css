@@ -188,92 +188,14 @@ h3,
 .login-shell {
   display: grid;
   min-height: 100vh;
-  grid-template-columns: minmax(0, 1.05fr) minmax(25rem, 0.95fr);
-}
-
-.login-story {
-  position: relative;
-  display: flex;
-  min-height: 100%;
-  flex-direction: column;
-  justify-content: center;
-  overflow: hidden;
-  padding: clamp(3rem, 8vw, 8rem);
-  color: #f9f2e9;
-  background:
-    linear-gradient(155deg, rgba(64, 38, 25, 0.92), rgba(101, 69, 46, 0.96)),
-    repeating-linear-gradient(35deg, transparent 0 16px, rgba(255, 255, 255, 0.04) 17px 18px);
-}
-
-.login-story::before,
-.login-story::after {
-  position: absolute;
-  content: "";
-  border: 1px solid rgba(249, 242, 233, 0.12);
-  border-radius: 50%;
-}
-
-.login-story::before {
-  width: 31rem;
-  height: 31rem;
-  right: -13rem;
-  top: -12rem;
-}
-
-.login-story::after {
-  width: 20rem;
-  height: 20rem;
-  left: -9rem;
-  bottom: -10rem;
-}
-
-.login-story .eyebrow {
-  color: #d9b99f;
-}
-
-.login-story h1 {
-  max-width: 10ch;
-  margin-bottom: 1.4rem;
-  font-size: clamp(3rem, 6vw, 5.8rem);
-  line-height: 0.98;
-  letter-spacing: -0.045em;
-}
-
-.story-copy {
-  max-width: 37rem;
-  color: #dfd2c6;
-  font-size: 1.05rem;
-  line-height: 1.8;
-}
-
-.story-mark {
-  display: flex;
-  align-items: center;
-  gap: 0.8rem;
-  margin-top: clamp(3rem, 9vw, 8rem);
-  color: #d9b99f;
-}
-
-.story-mark > span {
-  font-family: Georgia, "Times New Roman", serif;
-  font-size: 1.2rem;
-}
-
-.story-mark > div {
-  width: 3rem;
-  height: 1px;
-  background: rgba(217, 185, 159, 0.45);
-}
-
-.story-mark small {
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
+  place-items: center;
+  padding: clamp(1.5rem, 5vw, 5rem);
 }
 
 .login-panel {
   display: grid;
+  width: 100%;
   place-items: center;
-  padding: clamp(1.5rem, 5vw, 5rem);
 }
 
 .login-card {
@@ -789,27 +711,6 @@ td small {
 }
 
 @media (max-width: 900px) {
-  .login-shell {
-    grid-template-columns: 1fr;
-  }
-
-  .login-story {
-    min-height: auto;
-    padding: 4rem 2rem;
-  }
-
-  .login-story h1 {
-    font-size: clamp(2.8rem, 11vw, 4.5rem);
-  }
-
-  .story-mark {
-    margin-top: 3rem;
-  }
-
-  .login-panel {
-    padding: 2rem 1rem 4rem;
-  }
-
   .summary-grid {
     grid-template-columns: 1fr 1fr;
   }
@@ -924,10 +825,6 @@ td small {
 }
 
 @media (max-width: 480px) {
-  .login-story {
-    padding: 3rem 1.35rem;
-  }
-
   .login-card {
     padding: 1.5rem;
   }

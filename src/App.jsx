@@ -73,19 +73,6 @@ function LoginScreen({ onLogin }) {
 
   return (
     <main className="login-shell">
-      <section className="login-story" aria-label="Pandayan inventory introduction">
-        <p className="eyebrow">Laboratory Exercise No. 6</p>
-        <h1>A calmer way to manage your collection.</h1>
-        <p className="story-copy">
-          A secure React workspace connected to a LavaLust API and your Aiven MySQL database.
-        </p>
-        <div className="story-mark" aria-hidden="true">
-          <span>PA</span>
-          <div />
-          <small>Pandayan · thoughtfully stocked</small>
-        </div>
-      </section>
-
       <section className="login-panel">
         <form className="login-card" onSubmit={submit}>
           <div className="brand-lockup">
