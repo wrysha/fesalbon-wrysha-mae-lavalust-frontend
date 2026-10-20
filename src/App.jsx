@@ -1,6 +1,5 @@
 import { useEffect, useMemo, useState } from 'react'
 import {
-  API_BASE_URL,
   ApiError,
   clearSession,
   getStoredSession,
@@ -118,8 +117,6 @@ function LoginScreen({ onLogin }) {
           <button className="button primary wide" disabled={submitting}>
             {submitting ? 'Signing in…' : 'Sign in'}
           </button>
-
-          <p className="api-caption">Connected to {API_BASE_URL}</p>
         </form>
       </section>
     </main>

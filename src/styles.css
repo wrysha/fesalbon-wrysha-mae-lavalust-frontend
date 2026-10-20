@@ -269,17 +269,6 @@ h3,
   font-size: 0.75rem;
 }
 
-.api-caption {
-  margin: 1.3rem 0 0;
-  overflow: hidden;
-  color: #9b8d82;
-  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
-  font-size: 0.66rem;
-  text-align: center;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-
 .notice {
   display: flex;
   align-items: center;
